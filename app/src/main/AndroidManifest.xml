@@ -16,7 +16,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Activity.Activity_choosePlant"></activity>
+        <activity android:name=".Activity.Activity_choosePlant" />
+        <activity android:name=".Activity.Activity_inicio" />
+        <activity android:name=".Activity.Activity_clima" />
+        <activity android:name=".Activity.Activity_saludHuerto"></activity>
     </application>
 
 </manifest>

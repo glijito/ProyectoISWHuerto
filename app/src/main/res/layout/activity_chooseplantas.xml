@@ -7,22 +7,24 @@
     android:layout_height="match_parent">
 
     <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerPlant"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical">
-    </android.support.v7.widget.RecyclerView>
+        android:layout_height="400dp"
+        android:orientation="vertical"></android.support.v7.widget.RecyclerView>
 
     <Button
+        android:id="@+id/btnContinuar"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
-        android:textColor="@color/whitePrimary"
-        android:textStyle="bold"
-        android:background="@color/colorAccent"
         android:layout_marginTop="10dp"
+        android:background="@color/colorAccent"
         android:padding="10dp"
+        android:text="Continuar"
+        android:textColor="@color/whitePrimary"
         android:textSize="20dp"
-        android:text="Continuar"/>
+        android:textStyle="bold" />
+
 
 
 

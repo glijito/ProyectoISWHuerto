@@ -9,23 +9,21 @@
     <android.support.v7.widget.RecyclerView
         android:id="@+id/recyclerPlant"
         android:layout_width="match_parent"
-        android:layout_height="400dp"
+        android:layout_height="0dp"
+        android:layout_weight=".9"
+        android:layout_margin="20dp"
         android:orientation="vertical"></android.support.v7.widget.RecyclerView>
-
     <Button
         android:id="@+id/btnContinuar"
         android:layout_width="300dp"
-        android:layout_height="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight=".1"
         android:layout_gravity="center_horizontal"
-        android:layout_marginTop="10dp"
+        android:layout_marginBottom="15dp"
         android:background="@color/colorAccent"
         android:padding="10dp"
         android:text="Continuar"
         android:textColor="@color/whitePrimary"
         android:textSize="20dp"
         android:textStyle="bold" />
-
-
-
-
 </LinearLayout>

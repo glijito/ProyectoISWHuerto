@@ -40,7 +40,7 @@ public class Activity_choosePlant extends AppCompatActivity {
 
 
     private void initRecyclerViewPlant(int reciclerIdentificador, ArrayList<Integer> images, int cardViewID ){
-        LinearLayoutManager layoutManager = new LinearLayoutManager(this,LinearLayoutManager.HORIZONTAL,false);
+        LinearLayoutManager layoutManager = new LinearLayoutManager(this,LinearLayoutManager.VERTICAL,false);
         RecyclerView recyclerView = findViewById(reciclerIdentificador);
         recyclerView.setLayoutManager(layoutManager);
         recyclerView.setAdapter(new RecyclerViewChooserAdapter(images,this,cardViewID));

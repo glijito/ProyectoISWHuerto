@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:orientation="vertical"
     android:layout_height="match_parent"
-    tools:context=".Activity_loguin">
+    tools:context=".Activity.Activity_loguin">
 
     <TextView
         android:layout_width="wrap_content"
@@ -26,31 +26,46 @@
         android:layout_marginTop="5dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="10dp"
+        android:textStyle="bold"
+        android:layout_marginLeft="20dp"
         android:textSize="20dp"
         android:text="Nombre del usuario: "/>
+
     <EditText
+        android:id="@+id/txtUsers"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="10dp" />
+        android:textStyle="bold"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp" />
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="10dp"
+        android:layout_marginLeft="20dp"
+        android:textStyle="bold"
         android:textSize="20dp"
-        android:text="Nombre del usuario: "/>
+        android:text="Telefono: "/>
+
     <EditText
+        android:id="@+id/txtTelefono"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="10dp"/>
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:inputType="number"
+        android:textStyle="bold" />
+
     <Button
+        android:id="@+id/btnContinuar"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
-        android:textColor="@color/whitePrimary"
-        android:textStyle="bold"
-        android:background="@color/colorAccent"
+        android:layout_marginTop="10dp"
+        android:background="@color/blueDark"
         android:padding="10dp"
+        android:text="Continuar"
+        android:textColor="@color/whitePrimary"
         android:textSize="20dp"
-        android:text="Continuar"/>
+        android:textStyle="bold" />
+
 </LinearLayout>

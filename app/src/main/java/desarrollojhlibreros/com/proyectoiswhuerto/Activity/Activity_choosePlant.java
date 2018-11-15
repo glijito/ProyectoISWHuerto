@@ -24,8 +24,12 @@ public class Activity_choosePlant extends AppCompatActivity {
         setContentView(R.layout.activity_chooseplantas);
 
         ArrayList<Integer> images=new ArrayList<>();
-        for (int i=0;i<10;i++)
-            images.add(R.drawable.descuentos);
+        images.add(R.drawable.planta1);
+        images.add(R.drawable.planta2);
+        images.add(R.drawable.planta3);
+        images.add(R.drawable.planta4);
+        images.add(R.drawable.planta5);
+
 
         initRecyclerViewPlant(R.id.recyclerPlant,images,R.layout.listchoose_plant);
         btnContinuar=(Button)findViewById(R.id.btnContinuar);

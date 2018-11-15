@@ -4,10 +4,12 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:orientation="vertical"
+    android:background="@color/whitePrimary"
     android:layout_height="match_parent"
     tools:context=".Activity.Activity_loguin">
 
     <TextView
+        android:textColor="@color/redPrimary"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
@@ -27,6 +29,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textStyle="bold"
+        android:textColor="@color/redPrimary"
         android:layout_marginLeft="20dp"
         android:textSize="20dp"
         android:text="Nombre del usuario: "/>
@@ -36,11 +39,13 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textStyle="bold"
+        android:textColor="@color/redPrimary"
         android:layout_marginRight="20dp"
         android:layout_marginLeft="20dp" />
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:textColor="@color/redPrimary"
         android:layout_marginLeft="20dp"
         android:textStyle="bold"
         android:textSize="20dp"
@@ -61,10 +66,10 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="10dp"
-        android:background="@color/blueDark"
+        android:background="@color/yellowPrimary"
         android:padding="10dp"
         android:text="Continuar"
-        android:textColor="@color/whitePrimary"
+        android:textColor="@color/purporePrimary"
         android:textSize="20dp"
         android:textStyle="bold" />
 

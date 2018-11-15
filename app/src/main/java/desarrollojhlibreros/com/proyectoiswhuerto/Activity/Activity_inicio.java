@@ -31,7 +31,7 @@ public class Activity_inicio extends AppCompatActivity {
         btnClima=(ImageButton)findViewById(R.id.btnClima);
         btnPlanta=(ImageButton)findViewById(R.id.btnPlanta);
         btnSaludHuerto=(ImageButton)findViewById(R.id.btnSaludHuerto);
-        imageSlider=(CarouselView )findViewById(R.id.imageSlider);
+        imageSlider=(CarouselView)findViewById(R.id.imageSlider);
 
         setterCarrusel();
 

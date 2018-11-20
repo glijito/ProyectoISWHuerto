@@ -15,8 +15,11 @@
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:src="@drawable/ic_event_available_black_24dp"
-            android:layout_marginRight="10dp"/>
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"/>
         <TextView
+            android:id="@+id/lblFechaActual"
+            android:layout_gravity="center_vertical"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="dia/mes/anio (En curso)"
@@ -27,7 +30,21 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
+        android:textSize="20dp"
+        android:layout_marginLeft="10dp"
         android:text="Pronostico del clima:"/>
+
+    <android.support.v7.widget.CardView
+        android:layout_gravity="center_horizontal"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_marginTop="10dp"
+        android:layout_width="150dp"
+        app:cardElevation="5dp"
+        app:cardCornerRadius="4dp"
+        android:layout_height="150dp">
+
+
+    </android.support.v7.widget.CardView>
 
     <ImageView
         android:layout_width="wrap_content"

@@ -10,7 +10,7 @@ import retrofit2.http.Query;
 public interface ApiWheaterService {
 
     @GET("weather")
-    Call<JsonObject> getClimaPosicionActual(@Query("lat") String lat, @Query("lon") String lon,@Query("appid") String key);
+    Call<JsonObject> getClimaPosicionActual(@Query("lat") double lat, @Query("lon") double lon,@Query("appid") String key);
 
 
 

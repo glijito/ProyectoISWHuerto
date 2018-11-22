@@ -17,10 +17,10 @@ import com.google.android.gms.location.LocationServices;
 import desarrollojhlibreros.com.proyectoiswhuerto.R;
 
 public class Activity_clima extends AppCompatActivity implements GoogleApiClient.OnConnectionFailedListener, GoogleApiClient.ConnectionCallbacks {
-
-
+    
     private GoogleApiClient apiClient;
     private  int PETICION_PERMISO_LOCALIZACION=34;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -67,11 +67,9 @@ public class Activity_clima extends AppCompatActivity implements GoogleApiClient
                     && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
 
                 //Permiso concedido
-
                 @SuppressWarnings("MissingPermission")
                 Location lastLocation =
                         LocationServices.FusedLocationApi.getLastLocation(apiClient);
-
                 Log.e("LATITUD", "onConnected: "+lastLocation.getLatitude());
                 Log.e("LONGITUD", "onConnected: "+lastLocation.getLongitude());
             } else {

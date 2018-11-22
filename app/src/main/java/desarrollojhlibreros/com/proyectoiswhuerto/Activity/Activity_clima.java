@@ -25,8 +25,6 @@ public class Activity_clima extends AppCompatActivity implements GoogleApiClient
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_clima);
-
-
     }
 
     private void getPositionNow() {

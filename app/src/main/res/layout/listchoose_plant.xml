@@ -8,6 +8,7 @@
 
     <CheckBox
         android:id="@+id/chkChoose"
+        android:background="@color/whitePrimary"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center_vertical" />
@@ -16,6 +17,7 @@
         android:id="@+id/lblNamePlant"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:textColor="@color/whitePrimary"
         android:layout_gravity="center_vertical"
         android:layout_marginLeft="20dp"
         android:layout_marginRight="60dp"

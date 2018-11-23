@@ -3,6 +3,7 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
+    android:background="@color/blackPrimary"
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:fillViewport="true">
@@ -14,6 +15,8 @@
         <com.synnapps.carouselview.CarouselView
             android:id="@+id/imageSlider"
             android:layout_width="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
             android:layout_height="180dp"
             app:fillColor="#FFFFFFFF"
             app:pageColor="#00000000"
@@ -23,7 +26,8 @@
             app:strokeWidth="1dp"/>
 
         <LinearLayout
-            android:layout_margin="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
             android:id="@+id/linearCategoria"
             android:layout_below="@id/imageSlider"
             android:layout_width="match_parent"
@@ -31,30 +35,45 @@
             android:orientation="horizontal"
             android:weightSum="3">
 
-            <ImageButton
+            <Button
                 android:id="@+id/btnClima"
+                android:text="Clima Actual"
+                android:textStyle="bold"
+                android:textColor="@color/whitePrimary"
+                android:textSize="20dp"
                 android:layout_width="0dp"
+                android:background="@color/orangePrimary"
                 android:layout_height="match_parent"
-                android:layout_weight="2"
-                android:src="@drawable/dato" />
+                android:layout_weight="2" />
 
-            <ImageButton
+            <Button
                 android:id="@+id/btnPlanta"
                 android:layout_width="0dp"
+                android:text="Plantas"
+                android:textStyle="bold"
+                android:textColor="@color/whitePrimary"
+                android:textSize="20dp"
+                android:background="@color/redDark"
                 android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:src="@drawable/dato" />
+                android:layout_weight="1" />
         </LinearLayout>
 
-        <ImageButton
+        <Button
             android:id="@+id/btnSaludHuerto"
             android:layout_below="@+id/linearCategoria"
-            android:layout_margin="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
             android:layout_width="match_parent"
+            android:text="SALUD DEL HUERTO"
+            android:textStyle="bold"
+            android:textColor="@color/whitePrimary"
+            android:textSize="20dp"
             android:layout_height="120dp"
-            android:src="@drawable/datos"/>
+            android:background="@color/greenLigth"/>
 
         <android.support.v7.widget.RecyclerView
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
             android:layout_below="@+id/btnSaludHuerto"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"

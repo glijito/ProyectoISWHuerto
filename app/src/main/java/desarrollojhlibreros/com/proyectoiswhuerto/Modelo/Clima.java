@@ -3,6 +3,8 @@ package desarrollojhlibreros.com.proyectoiswhuerto.Modelo;
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
 
+import java.util.Arrays;
+
 public class Clima {
 
     @Expose
@@ -13,7 +15,8 @@ public class Clima {
     @SerializedName("main") private main ma;
     @Expose
     @SerializedName("wind") private wind wd;
-
+    @Expose
+    @SerializedName("clouds") private clouds cl;
 
     public class coord{
 
@@ -34,6 +37,14 @@ public class Clima {
 
         public void setLat(double lat) {
             this.lat = lat;
+        }
+
+        @Override
+        public String toString() {
+            return "coord{" +
+                    "lon=" + lon +
+                    ", lat=" + lat +
+                    '}';
         }
     }
 
@@ -74,6 +85,16 @@ public class Clima {
 
         public void setIcon(String icon) {
             this.icon = icon;
+        }
+
+        @Override
+        public String toString() {
+            return "weather{" +
+                    "id=" + id +
+                    ", main='" + main + '\'' +
+                    ", description='" + description + '\'' +
+                    ", icon='" + icon + '\'' +
+                    '}';
         }
     }
 
@@ -125,6 +146,32 @@ public class Clima {
         public void setTemp_max(double temp_max) {
             this.temp_max = temp_max;
         }
+
+        @Override
+        public String toString() {
+            return "main{" +
+                    "temp=" + temp +
+                    ", humidity=" + humidity +
+                    ", pressure=" + pressure +
+                    ", temp_min=" + temp_min +
+                    ", temp_max=" + temp_max +
+                    '}';
+        }
+    }
+
+    public class clouds{
+        private int all;
+
+        public int getAll() {
+            return all;
+        }
+
+        @Override
+        public String toString() {
+            return "clouds{" +
+                    "all=" + all +
+                    '}';
+        }
     }
 
     public class wind{
@@ -135,8 +182,42 @@ public class Clima {
             return speed;
         }
 
-        public void setSpeed(double speed) {
-            this.speed = speed;
+        @Override
+        public String toString() {
+            return "wind{" +
+                    "speed=" + speed +
+                    '}';
         }
+    }
+
+    public coord getCo() {
+        return co;
+    }
+
+    public weather[] getWh() {
+        return wh;
+    }
+
+    public main getMa() {
+        return ma;
+    }
+
+    public wind getWd() {
+        return wd;
+    }
+
+    public clouds getCl() {
+        return cl;
+    }
+
+    @Override
+    public String toString() {
+        return "Clima{" +
+                "co=" + co +
+                ", wh=" + Arrays.toString(wh) +
+                ", ma=" + ma +
+                ", wd=" + wd +
+                ", cl=" + cl +
+                '}';
     }
 }

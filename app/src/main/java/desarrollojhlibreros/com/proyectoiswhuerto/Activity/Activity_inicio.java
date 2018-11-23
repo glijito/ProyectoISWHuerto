@@ -5,6 +5,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
 import android.view.View;
+import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.ImageView;
 
@@ -16,9 +17,9 @@ import desarrollojhlibreros.com.proyectoiswhuerto.R;
 
 public class Activity_inicio extends AppCompatActivity {
 
-    private ImageButton btnSaludHuerto;
-    private ImageButton btnClima;
-    private ImageButton btnPlanta;
+    private Button btnSaludHuerto;
+    private Button btnClima;
+    private Button btnPlanta;
     private CarouselView imageSlider;
     private int carruselImages[];
 
@@ -28,9 +29,9 @@ public class Activity_inicio extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_inicio);
 
-        btnClima=(ImageButton)findViewById(R.id.btnClima);
-        btnPlanta=(ImageButton)findViewById(R.id.btnPlanta);
-        btnSaludHuerto=(ImageButton)findViewById(R.id.btnSaludHuerto);
+        btnClima=(Button)findViewById(R.id.btnClima);
+        btnPlanta=(Button)findViewById(R.id.btnPlanta);
+        btnSaludHuerto=(Button)findViewById(R.id.btnSaludHuerto);
         imageSlider=(CarouselView)findViewById(R.id.imageSlider);
 
         setterCarrusel();

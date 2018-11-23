@@ -30,7 +30,6 @@ public class Activity_choosePlant extends AppCompatActivity {
         images.add(R.drawable.planta4);
         images.add(R.drawable.planta5);
 
-
         initRecyclerViewPlant(R.id.recyclerPlant,images,R.layout.listchoose_plant);
         btnContinuar=(Button)findViewById(R.id.btnContinuar);
 
@@ -41,7 +40,6 @@ public class Activity_choosePlant extends AppCompatActivity {
             }
         });
     }
-
 
     private void initRecyclerViewPlant(int reciclerIdentificador, ArrayList<Integer> images, int cardViewID ){
         LinearLayoutManager layoutManager = new LinearLayoutManager(this,LinearLayoutManager.VERTICAL,false);

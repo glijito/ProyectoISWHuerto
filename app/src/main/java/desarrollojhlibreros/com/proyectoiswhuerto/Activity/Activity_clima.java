@@ -132,10 +132,9 @@ public class Activity_clima extends AppCompatActivity implements GoogleApiClient
         TextView temMaxima=(TextView) findViewById(R.id.idTempMaxima);
         TextView temMinima=(TextView) findViewById(R.id.idTempMinima);
 
-        Glide.with(this).load("http://openweathermap.org/img/w/"+climaCardView.getWh()[0].getIcon()).into(imageClima);
+        Glide.with(this).load("http://openweathermap.org/img/w/"+climaCardView.getWh()[0].getIcon()+".png").into(imageClima);
         nubosidad.setText("Nubes:"+climaCardView.getCl().getAll()+" %");
         temMaxima.setText("temperatura maxima:"+climaCardView.getMa().getTemp_max());
         temMinima.setText("temperatura minima:"+climaCardView.getMa().getTemp_min());
     }
-
 }

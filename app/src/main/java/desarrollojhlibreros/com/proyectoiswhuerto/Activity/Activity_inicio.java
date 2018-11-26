@@ -49,6 +49,13 @@ public class Activity_inicio extends AppCompatActivity {
                 startActivity(new Intent(getBaseContext(),Activity_saludHuerto.class));
             }
         });
+
+        btnPlanta.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(getBaseContext(),Activity_choosePlant.class));
+            }
+        });
     }
 
     private void setterCarrusel(){

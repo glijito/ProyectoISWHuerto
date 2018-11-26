@@ -17,9 +17,9 @@
         android:id="@+id/lblNamePlant"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textColor="@color/whitePrimary"
+        android:textColor="@color/blackPrimary"
         android:layout_gravity="center_vertical"
-        android:layout_marginLeft="20dp"
+        android:layout_marginLeft="25dp"
         android:layout_marginRight="60dp"
         android:text="Planta 1"
         android:textSize="20dp"
@@ -29,7 +29,8 @@
         android:id="@+id/imagePlant"
         android:layout_width="80dp"
         android:layout_height="match_parent"
-        android:layout_gravity="center_vertical"
+        android:layout_gravity="right"
+        android:layout_weight="0.1"
         android:layout_margin="5dp" />
 
 </LinearLayout>

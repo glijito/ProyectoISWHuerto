@@ -27,7 +27,7 @@ public class Activity_loguin extends AppCompatActivity {
         btnContinuar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(getBaseContext(),Activity_choosePlant.class));
+                startActivity(new Intent(getBaseContext(),Activity_inicio.class));
             }
         });
     }

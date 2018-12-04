@@ -1,5 +1,6 @@
 package desarrollojhlibreros.com.proyectoiswhuerto.Modelo;
 
+import com.bumptech.glide.annotation.Excludes;
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
 
@@ -8,15 +9,26 @@ import java.util.Arrays;
 public class Clima {
 
     @Expose
-    @SerializedName("coord") private coord co;
+    @SerializedName("coord")
+    private coord co;
     @Expose
-    @SerializedName("weather") private weather wh[];
+    @SerializedName("weather")
+    private weather wh[];
     @Expose
-    @SerializedName("main") private main ma;
+    @SerializedName("main")
+    private main ma;
     @Expose
-    @SerializedName("wind") private wind wd;
+    @SerializedName("wind")
+    private wind wd;
     @Expose
-    @SerializedName("clouds") private clouds cl;
+    @SerializedName("clouds")
+    private clouds cl;
+    @Expose
+    @SerializedName("name")
+    private String nameCity;
+    @Expose
+    @SerializedName("dt_txt")
+    private String dt_txt;
 
     public class coord{
 
@@ -190,6 +202,10 @@ public class Clima {
         }
     }
 
+    public String getNameCity() {
+        return nameCity;
+    }
+
     public coord getCo() {
         return co;
     }
@@ -210,6 +226,10 @@ public class Clima {
         return cl;
     }
 
+    public String getDt_txt() {
+        return dt_txt;
+    }
+
     @Override
     public String toString() {
         return "Clima{" +
@@ -220,4 +240,5 @@ public class Clima {
                 ", cl=" + cl +
                 '}';
     }
+
 }

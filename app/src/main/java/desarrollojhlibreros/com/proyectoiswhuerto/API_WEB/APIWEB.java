@@ -10,7 +10,7 @@ import retrofit2.converter.gson.GsonConverterFactory;
 public class APIWEB {
 
     public static  Retrofit retrofit;
-    public static  final String APIKEY="83f4b07a7e27629198760cf8b2c3e546";
+    public static final String APIKEY="83f4b07a7e27629198760cf8b2c3e546";
     public static final String ULRBASE="https://api.openweathermap.org/data/2.5/";
 
 
@@ -18,7 +18,6 @@ public class APIWEB {
 
         HttpLoggingInterceptor logging = new HttpLoggingInterceptor();
         logging.setLevel(HttpLoggingInterceptor.Level.BODY);
-        Log.e("Link:",""+ULRBASE);
 
         OkHttpClient.Builder httpclient = new OkHttpClient.Builder();
         httpclient.addInterceptor(logging);
@@ -32,5 +31,6 @@ public class APIWEB {
         }
         return retrofit;
     }
+
 
 }

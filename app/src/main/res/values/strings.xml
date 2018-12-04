@@ -1,3 +1,7 @@
 <resources>
-    <string name="app_name">Proyecto ISW Huerto</string>
+    <string name="app_name">Huerto Automatizado</string>
+    <string name="Activiti_clima">Clima</string>
+    <string name="Activiti_Inicio">Inicio</string>
+    <string name="Activiti_saludHuerto">Salus Huerto</string>
+    <string name="Activiti_plantas">Plantas en stock</string>
 </resources>

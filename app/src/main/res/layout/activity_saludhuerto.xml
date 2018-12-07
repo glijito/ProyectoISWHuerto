@@ -37,6 +37,7 @@
             android:orientation="vertical">
 
             <TextView
+                android:id="@+id/humedad"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="left"
@@ -44,6 +45,7 @@
                 android:textSize="20dp"
                 android:text="Humedad: "/>
             <TextView
+                android:id="@+id/temperatura"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="left"
@@ -51,11 +53,12 @@
                 android:textSize="20dp"
                 android:text="Temperatura ambiente: "/>
             <TextView
+                android:id="@+id/clima"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="left"
                 android:textSize="20dp"
-                android:text="clima esperado: "/>
+                android:text="Clima esperado: "/>
         </LinearLayout>
 
         <TableLayout
